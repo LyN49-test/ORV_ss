@@ -67,11 +67,5 @@ h1 {
   
 }
 
-.hakhyun img {
-  width: 150px;  /* Adjust size as needed */
-  height: 150px; /* Ensure it's a perfect circle */
-  border-radius: 50%; /* Makes the image round */
-  object-fit: cover; /* Prevents stretching */
-  border: 3px solid white; /* Optional: Adds a white border */
-}
+
 

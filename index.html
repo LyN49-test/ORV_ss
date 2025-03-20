@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
 </head>
 <body>
     <div class = 'Main'>
@@ -21,8 +22,10 @@
             <div class="container d-flex justify-content-center align-items-center text-center vh-100">
                 
                 <div class="col-lg-9 text-center">
-                    <img src="images/light mode.png" alt="Logo" class="logo">
-                    <h1 class="display-7 text-white lh-20 mb-3 text-center">THE OMNSCIENT READER'S VIEWPOINT SIDE STORY
+                    <img src="images/light mode.png" alt="Logo" class="logo" data-aos="fade-up" 
+                    data-aos-duration="1000">
+                    <h1 class="display-7 text-white lh-20 mb-3 text-center" data-aos="fade-up" 
+                    data-aos-duration="1000">THE OMNSCIENT READER'S VIEWPOINT SIDE STORY
                   </h1>
                 </div>
             </div>
@@ -37,12 +40,17 @@
         <!--timeline-->
         <section id ="journey" class="Main-section">
             <div class="container d-flex justify-content-center align-items-center text-center vh-100">
-                <h1 class = "display-3 text-white text-center">The journey begins with...</h1>
+                <h1 class = "display-3 text-white text-center"
+                    data-aos="fade-up" 
+                    data-aos-duration="1000">
+            The journey begins with...</h1>
             </div>
         </section>
         <section id ="journey" class="Main-section">
-            <div class="hakhyun d-flex justify-content-center align-items-center text-center vh-20">
-                <img src="images/2e95a7a4bd7a680626268d112c9c2e65.jpg">
+            <div class="hakhyun d-flex justify-content-center align-items-center text-center vh-20 mt-n7">
+                <img src="images/2e95a7a4bd7a680626268d112c9c2e65.jpg" 
+                class="rounded-circle img-fluid mt-n7" width="180"
+                data-aos="fade-up" data-aos-duration="1000">
                 
             </div>
             <div class="container d-flex justify-content-center align-items-center text-center">
@@ -52,9 +60,22 @@
             <div class="container d-flex justify-content-center align-items-center text-center">
                 <p class="text-white text-center mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, lacus ut dictum sollicitudin, urna justo malesuada nulla, ut feugiat libero dolor in nulla. Integer a nisl nec libero bibendum bibendum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, lacus ut dictum sollicitudin, urna justo malesuada nulla, ut feugiat libero dolor in nulla. Integer a nisl nec libero bibendum bibendum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, lacus ut dictum sollicitudin, urna justo malesuada nulla, ut feugiat libero dolor in nulla. Integer a nisl nec libero bibendum bibendum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, lacus ut dictum sollicitudin, urna justo malesuada nulla, ut feugiat libero dolor in nulla. Integer a nisl nec libero bibendum bibendum.
                 </p>    
             </div>
+    
         </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+          duration: 1000, // Animation duration in milliseconds
+          once: false, // Animation happens only once when scrolling down
+          mirror: true,
+        });
+    </script>
 </body>
           
