@@ -1,0 +1,69 @@
+#title {
+  background: 
+  url(../images/snowfield3.jpg) no-repeat center center/cover;
+  height: 100vh;
+  background-attachment: fixed; /* Keeps the image in place while scrolling */
+  overflow: hidden;
+}
+ 
+#title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+              #00000037 10%,  /* Darker from the start */
+              rgba(0, 0, 0, 0.9) 100%, 
+              rgba(6, 6, 24, 1) 100%); /* Fully blends into #season1 */
+  z-index: 1;
+}
+
+#title h1 {
+  position: relative;
+  z-index: 2; /* Keeps text above the dark overlay */
+  color: white;
+}
+
+#journey {
+  background: rgba(6, 6, 24, 1);
+  padding: 50px 0;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1em;
+  user-select: none;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.snowflake:nth-child(1) { left: 10%; animation-duration: 5s; opacity: 0.8; }
+.snowflake:nth-child(2) { left: 30%; animation-duration: 7s; opacity: 0.6; }
+.snowflake:nth-child(3) { left: 50%; animation-duration: 6s; opacity: 0.7; }
+.snowflake:nth-child(4) { left: 70%; animation-duration: 8s; opacity: 0.9; }
+.snowflake:nth-child(5) { left: 90%; animation-duration: 5s; opacity: 0.5; }
+
+.logo {
+  width: 350px;  /* Adjust size */
+  height: auto;  /* Keep aspect ratio */
+  margin-bottom: 20px; /* Add space between logo and text */
+}
+
+h1 {
+  font-family:"Playwrite GB J", cursive;
+  font-weight: 200; /* Make it bold */
+  font-style: normal; /* or italic */
+  color: white !important;
+  
+}
+
